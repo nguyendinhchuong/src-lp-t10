@@ -14,15 +14,6 @@
   <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167168250-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-167168250-1');
-  </script>
 
 </head>
 
@@ -121,7 +112,7 @@
           <div class="highlight container d-flex flex-column align-items-center text-justify mb-4 mb-md-0">
             <img src="img/icon3.png" class="mb-4" alt="" width="95px"> 
             <h6 class="text-center">Không mất thời gian nghỉ dưỡng</h6>
-            <p><span>T10 - YOUTH chỉ tiêm 10 điểm</span> trên mặt, các vết biến mất sau tối đa 3h và không mất thời gian nghỉ dưỡng. <span>Hiệu quả kéo dài.</span></p>
+            <p><span>T10 - YOUTH chỉ chọn 10 điểm</span> trên khuôn mặt để đưa dưỡng chất vào, các vết biến mất sau tối đa 3h và không mất thời gian nghỉ dưỡng. <span>Hiệu quả kéo dài.</span></p>
           </div>
         </div>
       </div>
@@ -135,20 +126,20 @@
           <img src="img/register_promotion.png" alt="">
         </div>
         <div class="col-10 col-md-5">
-          <form action="" class="text-center">
+          <form id="register-promotion" action="" method="GET" class="text-center">
             <div class="form-group input-icon">
               <img src="img/user_icon.png" alt="" width="36px" class="label-icon">
-              <input type="text" class="form-control input-register" placeholder="Họ và tên">
+              <input type="text" class="form-control input-register" id="name" name="name" placeholder="Họ và tên">
             </div>
             <div class="form-group input-icon">
               <img src="img/phone_icon.png" alt="" width="36px" class="label-icon">
-              <input type="text" class="form-control input-register" placeholder="Số điện thoại">
+              <input type="tel" class="form-control input-register" id="phone" name="phone" placeholder="Số điện thoại">
             </div>
             <div class="form-group input-icon">
               <img src="img/email_icon.png" alt="" width="36px" class="label-icon">
-              <input type="text" class="form-control input-register" placeholder="Email">
+              <input type="text" class="form-control input-register" id="email" name="email" placeholder="Email">
             </div>
-            <button class="btn btn-register">ĐĂNG KÝ NGAY <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+            <button class="btn btn-register" type="submit">ĐĂNG KÝ NGAY <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
           </form>
         </div>
       </div>
@@ -226,7 +217,7 @@
         <div class="customer-wrap d-flex flex-column position-relative container">
           <img src="/img/fb2.png" alt="" class="customer-img position-absolute">
           <p class="text-justify">
-            Tôi cũng 30 tuổi nên rất quan tâm đến sức khỏe làn da, đặc biệt là sợ lão hóa lắm. Để duy trì da đẹp thì tôi tập thể dục, chú ý ăn uống để da khỏe từ bên trong. Ngoài ra tôi còn cập nhật công nghệ trẻ hóa 10 điểm đề cải thiện thêm các nếp nhăn do lão hóa. Tôi đã làm 2 lần rồi, kết quả sau gần 2 tháng khá là ưng, da tôi căng hơn, đều màu hơn, đặc biệt là lỗ chân lông còn được cải thiện nữa!
+            Tôi cũng 30 tuổi nên rất quan tâm đến sức khỏe làn da, đặc biệt là sợ lão hóa lắm. Để duy trì da đẹp thì tôi tập thể dục, chú ý ăn uống để da khỏe từ bên trong. Ngoài ra tôi còn cập nhật công nghệ trẻ hóa 10 điểm để cải thiện thêm các nếp nhăn do lão hóa. Tôi đã làm 2 lần rồi, kết quả sau gần 2 tháng khá là ưng, da tôi căng hơn, đều màu hơn, đặc biệt là lỗ chân lông còn được cải thiện nữa!
           </p>
           <span class="customer-name position-absolute">Lan Anh</span>
           <span class="customer-title position-absolute font-weight-bold">DOANH NHÂN</span>
@@ -249,19 +240,19 @@
       <div class="d-flex flex-column align-items-center">
         <h5 class="normal-text text-center">ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN VỀ</h5>
         <h5 class="special-text text-center mb-5">LIỆU PHÁP TRẺ HÓA DA T10-YOUTH</h5>
-        <form action="" class="text-center">
+        <form id="register-advisory" action="" method="GET" class="text-center">
           <div class="form-row flex-column flex-md-row align-items-center justify-content-between mb-5">
             <div class="form-group input-icon">
               <img src="img/user_icon.png" alt="" width="36px" class="label-icon">
-              <input type="text" class="form-control input-register" placeholder="Họ và tên">
+              <input type="text" class="form-control input-register" id="name_advise" name="name_advise" placeholder="Họ và tên">
             </div>
             <div class="form-group input-icon">
               <img src="img/phone_icon.png" alt="" width="36px" class="label-icon">
-              <input type="text" class="form-control input-register" placeholder="Số điện thoại">
+              <input type="text" class="form-control input-register" id="phone_advise" name="phone_advise" placeholder="Số điện thoại">
             </div>
             <div class="form-group input-icon">
               <img src="img/email_icon.png" alt="" width="36px" class="label-icon">
-              <input type="text" class="form-control input-register" placeholder="Email">
+              <input type="email" class="form-control input-register" id="email_advise" name="email_advise" placeholder="Email">
             </div>
           </div>
           <button class="btn btn-register">ĐĂNG KÝ NGAY <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
@@ -282,8 +273,9 @@
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
+  <script src="js/validateForm.js"></script>
 
 </body>
 

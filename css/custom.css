@@ -1,6 +1,6 @@
 @font-face {
   font-family: UTM Aptima;
-  src: url(/fonts/UTM\Aptima.ttf);
+  src: url("/fonts/UTM Aptima.ttf");
 }
 @font-face {
   font-family: "SVN Aptima";
@@ -402,6 +402,11 @@ a.logo img {
 }
 #footer-register .form-group.input-icon {
   width: calc(100% / 3 - 16px);
+}
+#footer-register label.error {
+  position: absolute;
+  transform: translateX(-50%, 0);
+  width: 100%;
 }
 
 #footer {
