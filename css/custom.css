@@ -423,6 +423,13 @@ a.logo img {
 
 
 @media (max-width: 768px) {
+  .banner {
+    padding-top: 60px;
+    background: url(/img/Group\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
   .description-detail {
     font-size: 16px;
   }
