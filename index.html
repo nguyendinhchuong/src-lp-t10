@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SRC Landing Page</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <!-- =======================================================
+    Theme Name: Mentor
+    Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <header class="main-banner">
+    <button class="btn btn-tel"> <img class="btn-tel-img" src="/img/btn_tel.png" alt=""> (028) 2200 3234 </button>
+    <a href="/" class="logo"><img src="/img/logo.png" alt=""></a>
+    <div class="d-flex flex-column src-infor">
+      <div class="d-flex mb-2">
+        <img src="/img/email.png" alt="">
+        <span>infor@srcvietnam.com</span>
+      </div>
+      <div class="d-flex">
+        <img src="/img/position.png" alt="">
+        <span>55 Tú Xương, Phường 7, Quận 3, TPHCM</span>
+      </div>
+    </div>
+  </header>
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                              </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--/ Modal box-->
+  <!--Banner-->
+  <div class="banner">
+    <div class="bg-color">
+    </div>
+  </div>
+  <div class="description-detail text-center">
+    <div class="container">
+      <p>
+        Muốn đẹp nhưng không thể chịu đau? <br>
+        <span>LIỆU PHÁP TRẺ HÓA DA THẾ HỆ MỚI T10 – YOUTH là dành cho bạn! </span><br><br>
+      
+      <em>Liệu pháp trẻ hóa thông thường phải xâm lấn rất nhiều, gây đau đớn và tổn thương da. T10- YOUTH - Trẻ hóa da thế hệ mới chỉ chọn 10 điểm để đưa dưỡng chất vào, hạn chế tối đa xâm lấn, tái sinh làn da tươi trẻ, căng bóng hoàn hảo.</em>
+      </p>
+    </div>
+    
+  </div>
+  <!--/ Banner-->
+  <section id="service-advantage" class="d-flex flex-column">
+    <div class="section-title">ƯU ĐIỂM DỊCH VỤ</div>
+    <div class="d-flex justify-content-center text-justify">
+      <div class="col-4 services-list">
+        <h4>T10-YOUTH - ĐỘC QUYỀN <br> TẠI VIỆN TRẺ HÓA SÀI GÒN</h4>
+        <ul>
+          <li class="service"><span>•   Chỉ chọn 10 điểm trên khuôn mặt để đưa dưỡng chất vào,</span> các vết biến mất sau tối đa 3h, <span>không mất thời gian nghỉ dưỡng.</span></li><br>
+          <li class="service">•   Sử dụng dưỡng chất chứa <span>nồng độ collagen và HA chất lượng cao nhất</span> trên thị trường.</li><br>
+          <li class="service"><span>•   Làm mờ vết nhăn thấy được</span> ngay trong lần đầu tiên và tối ưu sau 2 lần điều trị.</li><br>
+          <li class="service">•   Kích thích <span>tăng sinh Collagen từ sâu bên trong,</span> tác động mạnh đến các tế bào collagen và elastin dưới da, giúp <span>tăng cường và giữ ẩm cho da.</span></li><br>
+          <li class="service">•   Thúc đẩy tăng sinh tế bào mỡ <span>làm săn chắc vùng da chùng nhão, chảy xệ.</span></li>
+        </ul>
+      </div>
+      <div class="col-4 services-list ml-5">
+        <h4>LIỆU PHÁP TRẺ HOÁ THÔNG THƯỜNG KHÁC</h4>
+        <ul>
+          <li class="service">•   Phải <span>xâm lấn rất nhiều điểm trên khuôn mặt</span> gây khó chịu, đau nhức và <span>số lần điều trị kéo dài.</span></li><br>
+          <li class="service">•   Vùng da điều trị có thể <span>bị sưng, đau và bầm nhẹ,</span> vết bầm kéo dài từ 3-4 ngày sau nếu không biết cách chăm sóc.</li><br><br>
+          <li class="service"><span>•   Hỗn hợp nhiều chất</span> trong mesotherapy <span>dễ có tác dụng phụ</span> do tương tác giữa các thành phần khác nhau. Hơn nữa, việc kết hợp HA với các vitamin, khoáng chất cần được pha loãng, nếu không vùng điều trị sẽ thấy <span>nốt sần trên da.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="implement-progress" class="text-center">
+    <div class="section-title">QUÁ TRÌNH THỰC HIỆN</div>
+    <img src="img/progress.png" alt="" width="87%">
+  </section>
+
+  <section id="service-effect">
+    <div class="container">
+      <div class="section-title">HIỆU QUẢ DỊCH VỤ</div>
+      <div class="container dna-bg">
+        <div class="row effect justify-content-end"><em class="col-4 text-justify">T10 - YOUTH là một cuộc cách mạng mới cho trẻ hóa da, bạn sẽ có thể nhìn thấy và cảm nhận kết quả gần như ngay lập tức.</em></div>
+        <div class="row effect justify-content-start"><em class="col-4 text-right">Cải thiện làn da đến 75-80% ngay sau lần đầu tiên và tối ưu sau 2 lần điều trị.</em></div>
+        <div class="row effect justify-content-end"><em class="col-4 text-justify">4 loại Collagen và Elastin giúp làn da đều màu, săn chắc, và mang lại vẻ trẻ trung, rạng rỡ. Đồng thời T10-YOUTH còn giúp bổ sung độ ẩm cho da, giảm thô ráp, điều tiết lượng dầu.</em></div>
+        <div class="row effect justify-content-start"><em class="col-4 text-right">Ngăn chặn quá trình lão hoá tiếp diễn, duy trì sự trẻ trung cho gương mặt.</em></div>
+        <div class="row effect justify-content-end"><em class="col-4 text-justify">Cấu trúc bên dưới da được cải thiện và phục hồi, nhờ đó làn da được săn chắc hơn.</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights" class="section-padding text-center">
+    <div class="container">
+      <div class="row flex-column">
+        <h5 class="mb-5">ĐIỂM NỔI BẬT CỦA LIỆU PHÁP TRẺ HÓA DA T10-YOUTH TẠI VIỆN TRẺ HÓA SÀI GÒN</h5>
+        <div class="d-flex justify-content-between">
+          <div class="highlight container d-flex flex-column align-items-center text-justify">
+            <img src="img/icon1.png" class="mb-4" alt="" width="95px">
+            <h6 class="text-center">Cá nhân hóa liệu trình theo tình trạng mỗi người</h6>
+            <p>Các bác sĩ sẽ dựa vào kết quả soi & chụp cắt lớp 3D da để <span>thiết kế riêng</span> liệu trình phù hợp nhất với thể trạng và nhu cầu khách hàng</p>
+          </div>
+          <div class="highlight container d-flex flex-column align-items-center text-justify">
+            <img src="img/icon2.png" class="mb-4" alt="" width="95px">
+            <h6 class="text-center">Tuyệt đối an toàn & hiệu quả</h6>
+            <p>Liệu pháp trẻ hóa da <span>T10 - YOUTH</span> tại Viện Trẻ hóa Sài Gòn được bác sĩ chuyên khoa trực tiếp thực hiện, sử dụng sản phẩm có chứng nhận, <span>đảm bảo an toàn tuyệt đối</span> cho khách hàng.</p>
+          </div>
+          <div class="highlight container d-flex flex-column align-items-center text-justify">
+            <img src="img/icon3.png" class="mb-4" alt="" width="95px"> 
+            <h6 class="text-center">Không mất thời gian nghỉ dưỡng</h6>
+            <p><span>T10 - YOUTH chỉ tiêm 10 điểm</span> trên mặt, các vết biến mất sau tối đa 3h và không mất thời gian nghỉ dưỡng. <span>Hiệu quả kéo dài.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register-promote" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-6 banner-promotion">
+          <img src="img/register_promotion.png" alt="">
+        </div>
+        <div class="col-5">
+          <form action="" class="text-center">
+            <div class="form-group input-icon">
+              <img src="img/user_icon.png" alt="" width="36px" class="label-icon">
+              <input type="text" class="form-control input-register" placeholder="Họ và tên">
+            </div>
+            <div class="form-group input-icon">
+              <img src="img/phone_icon.png" alt="" width="36px" class="label-icon">
+              <input type="text" class="form-control input-register" placeholder="Số điện thoại">
+            </div>
+            <div class="form-group input-icon">
+              <img src="img/email_icon.png" alt="" width="36px" class="label-icon">
+              <input type="text" class="form-control input-register" placeholder="Email">
+            </div>
+            <button class="btn btn-register">ĐĂNG KÝ NGAY <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experts" class="section-padding">
+    <div class="container">
+      <div class="row flex-nowrap justify-content-between slider expert-slide">
+        <div class="d-flex flex-column align-items-center container expert-1">
+          <img src="img/expert1.png" alt="" width="60%" class="mb-3">
+          <h4 class="text-center">TS.BS<br>Kharazmi Mohammad</h4>
+          <p class="text-justify">• Phó giáo sư Khoa Lâm sàng Trường Đại học UC Riverside School of Medicine, Hoa Kỳ.<br>
+            • Người sáng lập Viện chống lão hóa di truyền, Hoa Kỳ.<br>
+            • Trợ lý Giám đốc y tế Trung tâm Y tế Eisenhower.<br>
+            • Đồng sáng lập Nugene - công ty công nghệ sinh học chuyên nghiên cứu yếu tố tăng trưởng và tế bào gốc.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center container expert-2">
+          <img src="img/expert2.png" alt="" width="60%" class="mb-3">
+          <h4 class="text-center">TS.BS<br>Daniel Jefferson</h4>
+          <p class="text-justify">• Tiến sĩ Y khoa Trường Đại học Esfahan, Iran.<br>
+            • Chứng nhận Tế bào gốc đa tiềm năng cảm ứng (Induced Pluripotent Stem Cells – iPS) tại Miltenyi Biotec, Đức.<br>
+            • Chứng nhận nghiên cứu lâm sàng của Hiệp hội nghiên cứu lâm sàng, Hoa Kỳ.<br>
+            • Chứng nhận toàn diện về ứng dụng các kỹ thuật trong Botox và Dysport.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center container expert-3">
+          <img src="img/expert3.png" alt="" width="60%" class="mb-3">
+          <h4 class="text-center">Ths.BS<br>Lê Minh Châu</h4>
+          <p class="text-justify">• Thạc sĩ chuyên ngành Da Liễu – ĐH Y Dược TPHCM.<br>
+            • Chứng chỉ Thủ thuật cơ bản và tiểu phẫu da.<br>
+            • Chứng chỉ Ứng dụng Laser và Ánh sáng trong da liễu.<br>
+            • Chứng chỉ “Ứng dụng Botox” do Bệnh viện Da Liễu tổ chức.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center container expert-4">
+          <img src="img/expert3.png" alt="" width="60%" class="mb-3">
+          <h4 class="text-center">Ths.BS<br>Lê Minh Châu</h4>
+          <p class="text-justify">• Thạc sĩ chuyên ngành Da Liễu – ĐH Y Dược TPHCM.<br>
+            • Chứng chỉ Thủ thuật cơ bản và tiểu phẫu da.<br>
+            • Chứng chỉ Ứng dụng Laser và Ánh sáng trong da liễu.<br>
+            • Chứng chỉ “Ứng dụng Botox” do Bệnh viện Da Liễu tổ chức.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center container expert-5">
+          <img src="img/expert3.png" alt="" width="60%" class="mb-3">
+          <h4 class="text-center">Ths.BS<br>Lê Minh Châu</h4>
+          <p class="text-justify">• Thạc sĩ chuyên ngành Da Liễu – ĐH Y Dược TPHCM.<br>
+            • Chứng chỉ Thủ thuật cơ bản và tiểu phẫu da.<br>
+            • Chứng chỉ Ứng dụng Laser và Ánh sáng trong da liễu.<br>
+            • Chứng chỉ “Ứng dụng Botox” do Bệnh viện Da Liễu tổ chức.</p>
+        </div>
+        <div class="d-flex flex-column align-items-center container expert-5">
+          <img src="img/expert3.png" alt="" width="60%" class="mb-3">
+          <h4 class="text-center">Ths.BS<br>Lê Minh Châu</h4>
+          <p class="text-justify">• Thạc sĩ chuyên ngành Da Liễu – ĐH Y Dược TPHCM.<br>
+            • Chứng chỉ Thủ thuật cơ bản và tiểu phẫu da.<br>
+            • Chứng chỉ Ứng dụng Laser và Ánh sáng trong da liễu.<br>
+            • Chứng chỉ “Ứng dụng Botox” do Bệnh viện Da Liễu tổ chức.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="customer-feedback" class="section-padding">
+    <div class="container">
+      <div class="section-title">Ý KIẾN KHÁCH HÀNG</div>
+      <div class="row justify-content-between">
+        <div class="customer-wrap d-flex flex-column position-relative container">
+          <img src="/img/fb1.png" alt="" class="customer-img position-absolute">
+          <p class="text-justify">
+            Da mình khô, thiếu sức sống vô cùng dù năm nay mới 24 tuổi. Được bạn chia sẻ nên mình biết về công nghệ trẻ hóa da tại Viện Trẻ hóa Sài Gòn. Đây là công nghệ mới, được bác sĩ tư vấn kĩ càng nên mình vô cùng yên tâm. Quá trình diễn ra nhanh chóng và không đau nhưng hiệu quả thì vô cùng tuyệt vời! Kết hợp với sự chỉ dẫn của Bác sĩ về cách cải thiện lối sống như ăn uống đều độ, tập thể dục hằng ngày,.. Mình thấy da mình căng sáng, có sức sống hơn nhiều. 
+          </p>
+          <span class="customer-name position-absolute">Thảo Vy</span>
+          <span class="customer-title position-absolute font-weight-bold">NHÂN VIÊN VĂN PHÒNG</span>
+          <span class="quote position-absolute"></span>
+        </div>
+        <div class="customer-wrap d-flex flex-column position-relative container">
+          <img src="/img/fb2.png" alt="" class="customer-img position-absolute">
+          <p class="text-justify">
+            Tôi cũng 30 tuổi nên rất quan tâm đến sức khỏe làn da, đặc biệt là sợ lão hóa lắm. Để duy trì da đẹp thì tôi tập thể dục, chú ý ăn uống để da khỏe từ bên trong. Ngoài ra tôi còn cập nhật công nghệ trẻ hóa 10 điểm đề cải thiện thêm các nếp nhăn do lão hóa. Tôi đã làm 2 lần rồi, kết quả sau gần 2 tháng khá là ưng, da tôi căng hơn, đều màu hơn, đặc biệt là lỗ chân lông còn được cải thiện nữa!
+          </p>
+          <span class="customer-name position-absolute">Lan Anh</span>
+          <span class="customer-title position-absolute font-weight-bold">DOANH NHÂN</span>
+          <span class="quote position-absolute"></span>
+        </div>
+        <div class="customer-wrap d-flex flex-column position-relative container">
+          <img src="/img/fb3.png" alt="" class="customer-img position-absolute">
+          <p class="text-justify">
+            Liệu pháp trẻ hóa da thế hệ mới tại Viện Trẻ hóa Sài Gòn khiến tôi thật sự hài lòng! Không những giảm nếp nhăn vùng khóe miệng mà toàn bộ da mặt cũng trở nên tươi sáng và trẻ trung hơn. Hồi trước phải chịu đau chi chít khuôn mặt, nhưng tại đây, chỉ với 10 điểm nhưng kết quả lại cực kì mỹ mãn. Liệu trình này quả là cứu tinh cho những người sợ đau như tôi!            
+          </p>
+          <span class="customer-name position-absolute">Như Bình</span>
+          <span class="customer-title position-absolute font-weight-bold">DOANH NHÂN</span>
+          <span class="quote position-absolute"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer-register" class="section-padding">
+    <div class="container">
+      <div class="row flex-column align-items-center">
+        <span class="normal-text">ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN VỀ</span>
+        <p class="special-text mb-5">LIỆU PHÁP TRẺ HÓA DA T10-YOUTH</p>
+        <form action="" class="text-center">
+          <div class="form-row justify-content-between mb-5">
+            <div class="form-group input-icon">
+              <img src="img/user_icon.png" alt="" width="36px" class="label-icon">
+              <input type="text" class="form-control input-register" placeholder="Họ và tên">
+            </div>
+            <div class="form-group input-icon">
+              <img src="img/phone_icon.png" alt="" width="36px" class="label-icon">
+              <input type="text" class="form-control input-register" placeholder="Số điện thoại">
+            </div>
+            <div class="form-group input-icon">
+              <img src="img/email_icon.png" alt="" width="36px" class="label-icon">
+              <input type="text" class="form-control input-register" placeholder="Email">
+            </div>
+          </div>
+          <button class="btn btn-register">ĐĂNG KÝ NGAY <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="footer-title text-center pb-3">VIỆN TRẺ HÓA TOÀN DIỆN ĐẦU TIÊN TẠI VIỆT NAM<br>
+      VỀ LIỆU PHÁP TẾ BÀO VÀ NỘI TIẾT TỐ</div>
+    <div class="address text-center">Địa chỉ: 55 Tú Xương, P.7, Q.3, TPHCM<br>
+      Hotline: (028) 2200 3234</div>
+  </footer>
+  <!--/ Footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
