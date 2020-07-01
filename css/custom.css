@@ -403,10 +403,16 @@ a.logo img {
 #footer-register .form-group.input-icon {
   width: calc(100% / 3 - 16px);
 }
+label.error {
+  color: #fff;
+}
 #footer-register label.error {
   position: absolute;
-  transform: translateX(-50%, 0);
+  transform: translateX(-50%);
   width: 100%;
+  color: #fff;
+  top: 52px;
+  left: 50%;
 }
 
 #footer {
@@ -428,13 +434,11 @@ a.logo img {
 
 
 @media (max-width: 768px) {
-  /* .banner {
-    padding-top: 60px;
-    background: url(/img/Group\ 1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  } */
+  
+  
+  .section-title {
+    font-size: 24px;
+  }
   .description-detail {
     font-size: 16px;
   }
@@ -492,5 +496,39 @@ a.logo img {
   .slick-next {
     right: 8px;
     top: 20%;
+  }
+  label.error {
+    position: static;
+    color: #fff;
+  }
+  #footer-register label.error {
+    position: static;
+    color: #fff;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 414px) {
+  .main-banner {
+    position: relative;
+    height: calc(100vw * 471 / 1920);
+  }
+  a.logo img {
+    width: calc(100vw * 628 / 1920);
+  }
+  .banner {
+    background: url(/img/banner_title.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vw * 1340 / 1920);
+  }
+  .banner-sp {
+    background: url(/img/banner_sp_woman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    width: 100%;
+    height: 400px;
   }
 }
