@@ -157,7 +157,12 @@ a.logo img {
   border-radius: 3px;
   background-color: #d98d18;
 }
-
+#implement-progress .progress-pc {
+  display: inline;
+}
+#implement-progress .progress-sp {
+  display: none;
+}
 #service-advantage {
   background-image: url(/img/Background.png);
   background-size: contain;
@@ -431,16 +436,18 @@ label.error {
   font-size: 18px;
 }
 
-
-
 @media (max-width: 768px) {
-  
-  
   .section-title {
     font-size: 24px;
   }
   .description-detail {
     font-size: 16px;
+  }
+  #implement-progress .progress-pc {
+    display: none;
+  }
+  #implement-progress .progress-sp {
+    display: inline;
   }
   #service-effect .container .row.effect em {
     max-width: 100%;
@@ -460,6 +467,19 @@ label.error {
   #highlights .container .container {
     width: 80%;
   }
+  #service-advantage .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+  #service-advantage .flex-column {
+    flex-direction: column !important;
+  }
+  #service-advantage .col-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  #service-advantage .ml-md-5 {
+    margin-left: 0 !important;
+  }
   #highlights .d-flex.flex-column.flex-md-row {
     flex-direction: column !important;
   }
@@ -471,7 +491,7 @@ label.error {
   }
   #register-promote .flex-column {
     flex-direction: column !important;
-  } 
+  }
   #register-promote .col-10 {
     flex: 0 0 83.333333% !important;
     max-width: 83.333333% !important;
