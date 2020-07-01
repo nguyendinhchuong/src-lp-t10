@@ -251,6 +251,9 @@ a.logo img {
   font-family: "SVN Aptima bold italic";
 }
 
+#register-promote.section-padding {
+  padding: 48px 0;
+}
 #register-promote {
   background: url(/img/bs_section.png);
   background-size: cover;
@@ -301,8 +304,9 @@ a.logo img {
 }
 .btn-register i {
   position: absolute;
-  top: 6px;
+  top: 50%;
   right: 12px;
+  transform: translateY(-50%);
 }
 #experts {
   padding: 48px 0;
@@ -520,6 +524,9 @@ label.error {
   label.error {
     position: static;
     color: #fff;
+  }
+  .btn-register {
+    padding: 8px 58px 8px 44px;
   }
   #footer-register label.error {
     position: static;
