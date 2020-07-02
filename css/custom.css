@@ -601,6 +601,12 @@ label.error {
   #experts .container .container {
     width: 15%;
   }
+  .slick-prev {
+    left: -32px;
+  }
+  .slick-next {
+    right: -32px;
+  }
 }
 
 @media (max-width: 768px) {
