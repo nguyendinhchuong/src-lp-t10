@@ -61,6 +61,11 @@
   $("#scroll-register").on("click", function (e) {
     var $id = $('#register-promote')
     e.preventDefault();
-    $('body, html').animate({scrollTop: $id.offset().top})
+    if(window.innerWidth < 414) {
+      $('body, html').animate({scrollTop: $id.offset().top - 7 / 100 * window.innerHeight})
+    } else {
+      $('body, html').animate({scrollTop: $id.offset().top - 40 / 100 * window.innerHeight})
+    }
+    
   });
 })(jQuery);
