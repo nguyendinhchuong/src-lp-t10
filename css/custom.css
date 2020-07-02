@@ -722,6 +722,7 @@ label.error {
   }
   .btn-register {
     padding: 8px 58px 8px 44px;
+    font-family: "SVN Aptima bold";
   }
   #footer-register label.error {
     position: static;
@@ -752,7 +753,7 @@ label.error {
     height: calc(100vw * 1340 / 1920);
   }
   .banner-sp {
-    background: url(/img/banner_sp_woman2.png);
+    background: url(/img/banner_sp_woman.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40%;
@@ -762,4 +763,24 @@ label.error {
   #register-promote .banner-promotion .combo-img {
     width: 100%;
   }
+  .btn-floating {
+    position: fixed;
+    bottom: 48px;
+    right: 16px;
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
+    font-family: "SVN Aptima bold";
+    color: #dc9527 !important;
+    border: 2px solid #dc9527;
+    border-radius: 100%;
+    background-color: #fff;
+    line-height: 16px;
+    z-index: 100;
+  }
+  .btn-floating:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
 }

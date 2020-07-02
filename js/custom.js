@@ -1,35 +1,44 @@
-(function($) {
-
+(function ($) {
   // Navigation scrolls
-  $(".navbar-nav li a").on('click', function(event) {
-    $('.navbar-nav li').removeClass('active');
-    $(this).closest('li').addClass('active');
+  $(".navbar-nav li a").on("click", function (event) {
+    $(".navbar-nav li").removeClass("active");
+    $(this).closest("li").addClass("active");
     var $anchor = $(this);
-    var nav = $($anchor.attr('href'));
+    var nav = $($anchor.attr("href"));
     if (nav.length) {
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top
-      }, 1500, 'easeInOutExpo');
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            scrollTop: $($anchor.attr("href")).offset().top,
+          },
+          1500,
+          "easeInOutExpo"
+        );
 
       event.preventDefault();
     }
   });
-  $(".navbar-collapse a").on('click', function() {
-    $(".navbar-collapse.collapse").removeClass('in');
+  $(".navbar-collapse a").on("click", function () {
+    $(".navbar-collapse.collapse").removeClass("in");
   });
 
   // Add smooth scrolling to all links in navbar
-  $("a.mouse-hover, a.get-quote").on('click', function(event) {
+  $("a.mouse-hover, a.get-quote").on("click", function (event) {
     var hash = this.hash;
     if (hash) {
       event.preventDefault();
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1500, 'easeInOutExpo');
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        1500,
+        "easeInOutExpo"
+      );
     }
   });
 
-  $('.expert-slide').slick({
+  $(".expert-slide").slick({
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -39,15 +48,19 @@
         breakpoint: 770,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
-  if ($('.slick-next').length > 0)
-    $('.slick-next')[0].innerHTML = "";
+  if ($(".slick-next").length > 0) $(".slick-next")[0].innerHTML = "";
 
-  if ($('.slick-prev').length > 0)
-    $('.slick-prev')[0].innerHTML = "";
+  if ($(".slick-prev").length > 0) $(".slick-prev")[0].innerHTML = "";
+
+  $("#scroll-register").on("click", function (e) {
+    var $id = $('#register-promote')
+    e.preventDefault();
+    $('body, html').animate({scrollTop: $id.offset().top})
+  });
 })(jQuery);
