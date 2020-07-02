@@ -55,7 +55,7 @@ h6 {
   position: absolute;
   left: 8px;
   width: 17%;
-  bottom: 0;
+  transform: translateY(50%);
   animation: rotate-img 0.7s ease infinite;
 }
 @keyframes rotate-img {
