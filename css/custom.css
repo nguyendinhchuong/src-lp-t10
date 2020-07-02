@@ -401,8 +401,8 @@ a.logo img {
   bottom: -24px;
   animation: zoom-img-out 2s linear infinite;
   animation-delay: 1s, 1s;
-  animation: zoom-img-out 2s linear infinite;
-  animation-delay: 1s, 1s;
+  -webkit-animation: zoom-img-out 2s linear infinite;
+  -webkit-animation-delay: 1s, 1s;
 }
 @keyframes zoom-img-out {
   0% {
@@ -465,10 +465,9 @@ a.logo img {
   transform: translate(-50%, -50%);
   border: 0px solid #fff;
   opacity: 0;
-}
-.btn-register:hover::before{
   animation: ripple 1.25s ease-in-out infinite;
 }
+
 @keyframes ripple {
   0% {
     width: 182px;
@@ -642,7 +641,7 @@ label.error {
   right: 16px;
   width: 100px;
   height: 100px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "SVN Aptima bold";
   color: #dc9527 !important;
   border: 2px solid #dc9527;
@@ -650,10 +649,34 @@ label.error {
   background-color: #fff;
   line-height: 16px;
   z-index: 100;
+  box-shadow: 0 0 16px rgba(228, 198, 1);
+  animation: ripple-float 1s linear infinite;
+}
+@keyframes ripple-float {
+  0% {
+    box-shadow: 0 0 16px #e4a901;
+    transform: scale(1);
+  }
+  25% {
+    box-shadow: 0 0 24px #e4a901;
+    transform: scale(1.05);
+  }
+  50% {
+    box-shadow: 0 0 32px #e4a901;
+    transform: scale(1.1);
+  }
+  75%{
+    box-shadow: 0 0 24px #e4a901;
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 16px #e4a901;
+    transform: scale(1);
+  }
 }
 .btn-floating:focus {
   outline: none;
-  box-shadow: none;
+  box-shadow: 0 0 16px #e4a901;
 }
 @media (max-width: 1024px) {
   #experts .container .container {
@@ -741,9 +764,21 @@ label.error {
     margin-bottom: 120px !important;
   }
   #register-promote .banner-promotion .combo-img {
-    animation: none;
+    animation: zoom-img-out-sp 2s linear infinite;
+    -webkit-animation: zoom-img-out-sp 2s linear infinite;
     width: 60%;
     bottom: -100px;
+  }
+  @keyframes zoom-img-out-sp {
+    0% {
+      width: 80%;
+    }
+    50% {
+      width: 90%;
+    }
+    100% {
+      width: 80%;
+    }
   }
   #customer-feedback .customer-wrap {
     margin-bottom: 96px;
@@ -805,6 +840,41 @@ label.error {
   .btn-floating:focus {
     outline: none;
     box-shadow: none;
+  }
+  .btn-register::before {
+    border: 0px solid #fff;
+    opacity: 0;
+    animation: ripple-sp 1.25s linear infinite;
+  }
+  @keyframes ripple-sp {
+    0% {
+      width: 220px;
+      height: 30px;
+      opacity: 0;
+      border: 4px solid #fff;
+      border-radius: 24px;
+    }
+    20% {
+      width: 220px;
+      height: 30px;
+      opacity: 1;
+      border: 4px solid #fff;
+      border-radius: 24px;
+    }
+    60% {
+      width: 225px;
+      height: 35px;
+      opacity: 0.5;
+      border: 10px solid #fff;
+      border-radius: 32px;
+    }
+    100% {
+      width: 230px;
+      height: 40px;
+      opacity: 0;
+      border: 24px solid #fff;
+      border-radius: 40px;
+    }
   }
 }
 
