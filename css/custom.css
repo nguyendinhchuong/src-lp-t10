@@ -635,22 +635,70 @@ label.error {
   color: #2d2d2d;
   font-size: 18px;
 }
-.btn-floating {
+.btn-tel-floating {
   position: fixed;
-  bottom: 48px;
+  bottom: 166px;
   right: 16px;
-  width: 100px;
-  height: 100px;
-  font-size: 14px;
+  width: 232px;
+  height: 43px;
+  font-size: 18px;
   font-family: "SVN Aptima bold";
-  color: #dc9527 !important;
-  border: 2px solid #dc9527;
-  border-radius: 100%;
-  background-color: #fff;
-  line-height: 16px;
+  background-color: #da8d17;
+  border-radius: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 74px;
   z-index: 100;
+}
+.btn-tel-floating .phone-icon {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  line-height: 60px;
+  position: absolute;
+  right: -4px;
+  text-align: center;
+  background-color: #fff;
+  color: #DA8D17;
+  border: 3px solid;
+  border-radius: 100%;
   box-shadow: 0 0 16px rgba(228, 198, 1);
   animation: ripple-float 1s linear infinite;
+}
+.btn-register-floating {
+  position: fixed;
+  bottom: 80px;
+  right: 16px;
+  width: 232px;
+  height: 43px;
+  font-size: 18px;
+  font-family: "SVN Aptima bold";
+  color: #fff;
+  background-color: #da8d17;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding-right: 74px;
+  z-index: 100;
+}
+.btn-register-floating .plane-icon {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  line-height: 58px;
+  position: absolute;
+  right: -4px;
+  text-align: center;
+  background-color: #fff;
+  color: #DA8D17;
+  border: 3px solid;
+  border-radius: 100%;
+  box-shadow: 0 0 16px rgba(228, 198, 1);
+  animation: ripple-float 1s linear infinite;
+}
+.btn-tel-floating:hover, .btn-register-floating:hover {
+  color: inherit;
 }
 @keyframes ripple-float {
   0% {
@@ -665,7 +713,7 @@ label.error {
     box-shadow: 0 0 32px #e4a901;
     transform: scale(1.1);
   }
-  75%{
+  75% {
     box-shadow: 0 0 24px #e4a901;
     transform: scale(1.05);
   }
@@ -691,7 +739,6 @@ label.error {
 }
 
 @media (max-width: 768px) {
-  
   .banner .price-img {
     width: calc(100vw * 690 / 1920);
   }
@@ -822,24 +869,41 @@ label.error {
     color: #fff;
     transform: translateX(0);
   }
-  .btn-floating {
-    position: fixed;
-    bottom: 48px;
-    right: 16px;
-    width: 80px;
-    height: 80px;
-    font-size: 10px;
-    font-family: "SVN Aptima bold";
-    color: #dc9527 !important;
-    border: 2px solid #dc9527;
-    border-radius: 100%;
-    background-color: #fff;
-    line-height: 16px;
-    z-index: 100;
+  .btn-register-floating {
+    right: 32px;
+    width: 0;
+    padding-right: 0;
+    color: transparent !important;
+    background-color: transparent;
   }
-  .btn-floating:focus {
+  .btn-register-floating .plane-icon {
+    width: 56px;
+    height: 56px;
+    line-height: 50px;
+    padding-right: 4px;
+  }
+  .btn-register-floating:focus {
     outline: none;
     box-shadow: none;
+    color: transparent !important;
+  }
+
+  .btn-tel-floating {
+    right: 32px;
+    width: 0;
+    padding-right: 0;
+    color: transparent !important;
+    background-color: transparent;
+  }
+  .btn-tel-floating .phone-icon {
+    width: 56px;
+    height: 56px;
+    line-height: 50px;
+  }
+  .btn-tel-floating:focus {
+    outline: none;
+    box-shadow: none;
+    color: transparent !important;
   }
   .btn-register::before {
     border: 0px solid #fff;
@@ -872,7 +936,7 @@ label.error {
       width: 230px;
       height: 40px;
       opacity: 0;
-      border: 24px solid #fff;
+      border: 16px solid #fff;
       border-radius: 40px;
     }
   }
@@ -910,6 +974,4 @@ label.error {
   #register-promote .banner-promotion .combo-img {
     width: 100%;
   }
-  
-  
 }
