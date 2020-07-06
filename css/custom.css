@@ -1,21 +1,21 @@
 @font-face {
   font-family: UTM Aptima;
-  src: url("/fonts/UTM Aptima.ttf");
+  src: url("../fonts/UTM Aptima.ttf");
 }
 @font-face {
   font-family: "SVN Aptima";
   font-weight: 400;
-  src: url("/fonts/SVN-Aptima.ttf") format("truetype");
+  src: url("../fonts/SVN-Aptima.ttf") format("truetype");
 }
 @font-face {
   font-family: "SVN Aptima bold";
   font-weight: 700;
-  src: url("/fonts/SVN-Aptima bold.ttf") format("truetype");
+  src: url("../fonts/SVN-Aptima bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "SVN Aptima bold italic";
   font-weight: 700;
-  src: url("/fonts/SVN-Aptima bold italic.ttf") format("truetype");
+  src: url("../fonts/SVN-Aptima bold italic.ttf") format("truetype");
 }
 body {
   font-family: "UTM Aptima";

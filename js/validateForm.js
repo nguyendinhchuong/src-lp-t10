@@ -55,21 +55,60 @@ $(document).ready(function () {
       },
     },
   });
-
+  function formatDate(d) {
+    return (
+      [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
+      " " +
+      [d.getHours(), d.getMinutes(), d.getSeconds()].join(":")
+    );
+  }
   $("#register-promotion").submit(function (event) {
+    url =
+      "https://script.google.com/macros/s/AKfycbxmLf15_RKOIK0RnNvThoJ-yUN-Ur9GIK-Sqe9upEiOqzi2_b4/exec";
+    var $form = $("#register-promotion");
     event.preventDefault();
-    var isvalid = $("#register-promotion").valid();
+    var isvalid = $form.valid();
     if (isvalid) {
-      var data = $("#register-promotion").serializeArray();
-      console.log(data);
+      // console.table($form.serializeArray())
+      var data = $form.serializeArray();
+      var time_stamp = {
+        name: "time_stamp",
+        value: formatDate(new Date()),
+      };
+      data.push(time_stamp)
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: data,
+        success: function () {
+          alert("Submit successfully!");
+        },
+      });
     }
   });
   $("#register-advisory").submit(function (event) {
+    url =
+      "https://script.google.com/macros/s/AKfycbwTZEh80QfoH9YRWv4rFKAUh3YnbWaUlLYOGsefiSul8XjTo4y6/exec";
+    var $form = $("#register-advisory");
     event.preventDefault();
-    var isvalid = $("#register-advisory").valid();
+    var isvalid = $form.valid();
     if (isvalid) {
       var data = $("#register-advisory").serializeArray();
-      console.log(data);
+      var time_stamp = {
+        name: "time_stamp",
+        value: formatDate(new Date()),
+      };
+      data.push(time_stamp)
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: data,
+        success: function () {
+          alert("Submit successfully!");
+        },
+      });
     }
   });
 });
