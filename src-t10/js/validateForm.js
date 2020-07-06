@@ -64,12 +64,11 @@ $(document).ready(function () {
   }
   $("#register-promotion").submit(function (event) {
     url =
-      "https://script.google.com/macros/s/AKfycbxmLf15_RKOIK0RnNvThoJ-yUN-Ur9GIK-Sqe9upEiOqzi2_b4/exec";
+      "https://script.google.com/macros/s/AKfycbwmTxkpFEGa6aMkqYy576kf0RwIJL4dnilxIeQ-8CXF5n5Kj_0/exec";
     var $form = $("#register-promotion");
     event.preventDefault();
     var isvalid = $form.valid();
     if (isvalid) {
-      // console.table($form.serializeArray())
       var data = $form.serializeArray();
       var time_stamp = {
         name: "time_stamp",
@@ -81,15 +80,19 @@ $(document).ready(function () {
         method: "GET",
         dataType: "json",
         data: data,
-        success: function () {
-          alert("Submit successfully!");
+        success: function (res) {
+          if(res.result === "error"){
+            alert("Submit error!")
+          }else {
+            alert("Submit successfully!")
+          }
         },
       });
     }
   });
   $("#register-advisory").submit(function (event) {
     url =
-      "https://script.google.com/macros/s/AKfycbwTZEh80QfoH9YRWv4rFKAUh3YnbWaUlLYOGsefiSul8XjTo4y6/exec";
+      "https://script.google.com/macros/s/AKfycbwpvtJ5OemnR470A5Jd77GNAw8IPsCUyLg53FyoY4reVSHYTbKT/exec";
     var $form = $("#register-advisory");
     event.preventDefault();
     var isvalid = $form.valid();
@@ -105,8 +108,12 @@ $(document).ready(function () {
         method: "GET",
         dataType: "json",
         data: data,
-        success: function () {
-          alert("Submit successfully!");
+        success: function (res) {
+          if(res.result === "error"){
+            alert("Submit error!")
+          }else {
+            alert("Submit successfully!")
+          }
         },
       });
     }
