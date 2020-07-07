@@ -658,6 +658,7 @@ label.error {
   line-height: 60px;
   position: absolute;
   right: -4px;
+  bottom: -10px;
   text-align: center;
   background-color: #fff;
   color: #DA8D17;
@@ -689,6 +690,7 @@ label.error {
   line-height: 58px;
   position: absolute;
   right: -4px;
+  bottom: -10px;
   text-align: center;
   background-color: #fff;
   color: #DA8D17;
