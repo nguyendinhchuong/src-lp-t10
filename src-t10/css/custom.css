@@ -1,21 +1,21 @@
 @font-face {
   font-family: UTM Aptima;
-  src: url("/src-t10/fonts/UTM Aptima.ttf");
+  src: url("../fonts/UTM Aptima.ttf");
 }
 @font-face {
   font-family: "SVN Aptima";
   font-weight: 400;
-  src: url("/src-t10/fonts/SVN-Aptima.ttf") format("truetype");
+  src: url("../fonts/SVN-Aptima.ttf") format("truetype");
 }
 @font-face {
   font-family: "SVN Aptima bold";
   font-weight: 700;
-  src: url("/src-t10/fonts/SVN-Aptima bold.ttf") format("truetype");
+  src: url("../fonts/SVN-Aptima bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "SVN Aptima bold italic";
   font-weight: 700;
-  src: url("/src-t10/fonts/SVN-Aptima bold italic.ttf") format("truetype");
+  src: url("../fonts/SVN-Aptima bold italic.ttf") format("truetype");
 }
 body {
   font-family: "UTM Aptima";
@@ -136,7 +136,7 @@ a.logo img {
   padding: 32px 0;
 }
 .banner {
-  background-image: url(/src-t10/img/main_banner.png);
+  background-image: url(../img/main_banner.png);
   background-size: cover;
   position: relative;
   width: 100vw;
@@ -236,7 +236,7 @@ a.logo img {
 #implement-progress .learn-more::before {
   position: absolute;
   content: "";
-  background-image: url(/src-t10/img/black_right_arrow.png);
+  background-image: url(../img/black_right_arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
@@ -264,7 +264,7 @@ a.logo img {
 #implement-progress .learn-more::after {
   position: absolute;
   content: "";
-  background-image: url(/src-t10/img/black_left_arrow.png);
+  background-image: url(../img/black_left_arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
@@ -293,7 +293,7 @@ a.logo img {
   color: #000;
 }
 #service-advantage {
-  background-image: url(/src-t10/img/Background.png);
+  background-image: url(../img/Background.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -329,7 +329,7 @@ a.logo img {
 }
 
 #service-effect .dna-bg {
-  background: url(/src-t10/img/dna.png);
+  background: url(../img/dna.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -346,7 +346,7 @@ a.logo img {
 #service-effect .container .row.effect em::before {
   content: "";
   position: absolute;
-  background: url(/src-t10/img/ellipse.png);
+  background: url(../img/ellipse.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 47px;
@@ -362,7 +362,7 @@ a.logo img {
 }
 
 #highlights {
-  background: url(/src-t10/img/highlight-bg.png);
+  background: url(../img/highlight-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 32px;
@@ -384,7 +384,7 @@ a.logo img {
   padding: 48px 0;
 }
 #register-promote {
-  background: url(/src-t10/img/bs_section.png);
+  background: url(../img/bs_section.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -518,7 +518,7 @@ a.logo img {
   width: 20%;
 }
 .slick-arrow {
-  background: url(/src-t10/img/right_arrow.png);
+  background: url(../img/right_arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 56px;
@@ -575,7 +575,7 @@ a.logo img {
   font-style: italic;
 }
 #customer-feedback span.quote {
-  background: url(/src-t10/img/quote.png);
+  background: url(../img/quote.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 40px;
@@ -585,7 +585,7 @@ a.logo img {
 }
 
 #footer-register {
-  background: url(/src-t10/img/footer_register_bg.png);
+  background: url(../img/footer_register_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -728,6 +728,39 @@ label.error {
   outline: none;
   box-shadow: 0 0 16px #e4a901;
 }
+
+
+#successModal .modal-content {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+#successModal .modal-content .modal-body {
+  padding: 4rem 4rem 2rem;
+  text-align: center;
+}
+#successModal .modal-content .modal-body .fa-check-circle {
+  font-size: 56px;
+  margin-top: 24px;
+  color: #da8d17;
+}
+#successModal .modal-dialog {
+  top: 30%;
+  
+}
+#successModal .modal-footer {
+  justify-content: center;
+  border-top: none;
+}
+#successModal .btn-close-modal {
+  background-color: #da8d17;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  padding: 0.5rem 3rem;
+}
+.modal-backdrop.in {
+  background-color: rgba(0,0,0,0.4);
+}
 @media (max-width: 1024px) {
   #experts .container .container {
     width: 15%;
@@ -766,7 +799,7 @@ label.error {
     display: none;
   }
   #service-effect .dna-bg {
-    background: url(/src-t10/img/dna_trans.png);
+    background: url(../img/dna_trans.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -839,7 +872,7 @@ label.error {
     flex-direction: column !important;
   }
   .slick-arrow {
-    background: url(/src-t10/img/right_arrow.png);
+    background: url(../img/right_arrow.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 56px;
@@ -959,14 +992,14 @@ label.error {
     width: calc(100vw * 1440 / 1920);
   }
   .banner {
-    background: url(/src-t10/img/banner_title.png);
+    background: url(../img/banner_title.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: calc(100vw * 1340 / 1920);
   }
   .banner-sp {
-    background: url(/src-t10/img/banner_sp_woman.png);
+    background: url(../img/banner_sp_woman.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40%;

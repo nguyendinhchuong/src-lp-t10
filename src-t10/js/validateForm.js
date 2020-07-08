@@ -84,14 +84,16 @@ $(document).ready(function () {
           if(res.result === "error"){
             alert("Submit error!")
           }else {
-            alert("Submit successfully!")
+            $('#successModal').modal({
+              show: true
+            })
           }
         },
       });
     }
   });
   $("#register-advisory").submit(function (event) {
-    url =
+    url = 
       "https://script.google.com/macros/s/AKfycbwpvtJ5OemnR470A5Jd77GNAw8IPsCUyLg53FyoY4reVSHYTbKT/exec";
     var $form = $("#register-advisory");
     event.preventDefault();
@@ -112,7 +114,9 @@ $(document).ready(function () {
           if(res.result === "error"){
             alert("Submit error!")
           }else {
-            alert("Submit successfully!")
+            $('#successModal').modal({
+              show: true
+            })
           }
         },
       });
